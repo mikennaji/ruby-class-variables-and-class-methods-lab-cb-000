@@ -36,7 +36,7 @@ def self.genre_count
     count = @@genres.count(word)
     puts "#{word} #{count}"
     if hash.key?(word)
-      null
+      
     else
       hash[word] =count
     end
