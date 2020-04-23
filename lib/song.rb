@@ -39,6 +39,7 @@ def self.genre_count
       if word1 === word
         count += 1
       end
+      puts @@genres
     end
     hash[word] =count ## it will iterate over itself
   end
