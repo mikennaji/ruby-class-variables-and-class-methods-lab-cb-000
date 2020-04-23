@@ -35,7 +35,7 @@ def self.genre_count
   @@genres.each do |word|
     count = @@genres.count(word)
     if hash.key?(word)
-      
+
     else
       hash[word] =count
     end
@@ -51,7 +51,7 @@ def self.artist_count
   @@artists.each do |word|
     count = @@artists.count(word)
     if hash.key?(word)
-      
+
     else
       hash[word] =count
     end
