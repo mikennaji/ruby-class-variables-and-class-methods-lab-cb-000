@@ -29,4 +29,20 @@ def self.genres
   end
 end
 
+def genre_count
+  count = 0 
+  hash = {}
+  words = self.genres
+  words.each do |word|
+    count = 0
+    @@genres.each do |word1|
+      if word === word1
+        count += 1
+      end 
+    end
+    hash[word] =count 
+  end
+  hash
+end
+        
 end
