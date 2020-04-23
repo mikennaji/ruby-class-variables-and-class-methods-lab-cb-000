@@ -29,7 +29,7 @@ def self.genres
   end
 end
 
-def genre_count
+def self.genre_count
   count = 0
   hash = {}
   words = self.genres
