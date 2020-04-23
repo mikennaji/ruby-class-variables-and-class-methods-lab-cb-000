@@ -30,10 +30,10 @@ def self.genres
 end
 
 def self.genre_count
+  count = 0
   hash = {}
   words = self.genres
   words.each do |word|
-    count = 0
     @@genres.each do |word1|
       if word1 === word
         count += 1
