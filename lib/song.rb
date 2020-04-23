@@ -15,7 +15,7 @@ end
 
 def self.artists
   @@artists.each_with_index do |word, index|
-    if @@gartists.count(word)>= 2
+    if @@artists.count(word)>= 2
       @@artists.delete_at(index)
     end
   end
@@ -35,8 +35,8 @@ def self.genre_count
   words = self.genres
   words.each do |word|
     count = @@genres.count(word)
+    hash[word] =count
   end
-    hash[word] =count ## it will iterate over itself
   hash
 end
 
