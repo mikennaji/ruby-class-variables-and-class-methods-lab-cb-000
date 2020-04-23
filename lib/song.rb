@@ -1,5 +1,7 @@
 class Song
  attr_accessor :name, :artist, :genre
+
+
   @@count = 0
   @@genres = []
   @@artists = []
@@ -34,11 +36,7 @@ def self.genre_count
   hash = {}
   @@genres.each do |word|
     count = @@genres.count(word)
-    if hash.key?(word)
-
-    else
-      hash[word] =count
-    end
+    hash[word] =count
   end
   hash
 
