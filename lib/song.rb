@@ -30,8 +30,14 @@ def self.genres
 end
 
 def self.genre_count
-  @@genres
-  
+  hash = {}
+  @@genres.each do |word|
+    count = @@genres.count(word)
+    puts "word #{count}"
+  end
+
+
+
 end
 
 end
