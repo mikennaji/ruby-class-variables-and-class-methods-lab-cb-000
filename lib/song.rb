@@ -59,3 +59,5 @@ def self.artist_count
   hash
 
 end
+
+end
