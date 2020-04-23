@@ -36,7 +36,7 @@ def self.genre_count
   words.each do |word|
     count = 0
     @@genres.each do |word1|
-      if word === word1
+      if word1 === word
         count += 1
       end
     end
