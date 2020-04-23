@@ -40,7 +40,7 @@ def self.genre_count
         count += 1
       end
     end
-    hash[word] =count
+    hash[word] =count-1
   end
   hash
 end
