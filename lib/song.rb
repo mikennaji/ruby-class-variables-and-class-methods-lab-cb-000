@@ -35,7 +35,13 @@ def self.genre_count
   @@genres.each do |word|
     count = @@genres.count(word)
     puts "#{word} #{count}"
+    if hash.key?(word)
+      null
+    else
+      hash[word] =count
+    end
   end
+  hash
 
 
 
