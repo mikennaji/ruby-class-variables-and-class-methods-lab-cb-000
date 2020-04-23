@@ -3,13 +3,13 @@ class Song
   @@genres = []
 
 def initialize(song, artist, genre)
-    @@genres << genre  
+    @@genres << genre
     @@count += 1
 end
 
 def self.count
-  @@count 
-end 
+  @@count
+end
 
 
 
@@ -19,6 +19,6 @@ def self.genres
       @@genres.delete_at(index)
     end
   end
-end 
+end
 
 end
