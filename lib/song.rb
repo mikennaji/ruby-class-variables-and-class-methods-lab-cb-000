@@ -34,11 +34,8 @@ def self.genre_count
   hash = {}
   words = self.genres
   words.each do |word|
-    @@genres.each do |word1|
-      if word1 === word
-        count += 1
-      end
-    end
+    count = @@genres.count(word)
+  end
     hash[word] =count ## it will iterate over itself
   end
   hash
