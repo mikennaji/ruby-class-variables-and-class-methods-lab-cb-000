@@ -1,5 +1,5 @@
 class Song
-  @@artists = []
+  @@count = 0
 
 
 
