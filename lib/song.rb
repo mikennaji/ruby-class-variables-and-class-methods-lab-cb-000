@@ -28,11 +28,7 @@ def self.artists
 end
 
 def self.genres
-  @@genres.each_with_index do |word, index|
-    if @@genres.count(word)>= 2
-      @@genres.delete_at(index)
-    end
-  end
+  @@genres.uniq
 end
 
 def self.genre_count
